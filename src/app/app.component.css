@@ -1,0 +1,149 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagen-redonda {
+  border-radius: 50%; /* 5redondo */
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(219, 219, 219); /* Agrega el color de fondo gris claro */
+
+}
+.container {
+  display: flex;
+  height: 100vh;
+}
+.menu-container {
+  background-color: #333;
+  padding: 20px;
+  width: 200px;
+  height: 100%;
+  max-height: 100vh;
+  position: fixed;
+}
+.menu-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+.menu-container li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.menu-container li a:hover {
+  background-color: #111;
+}
+.logout{
+  position: absolute;
+  bottom: 10%;
+}
+main {
+  padding-left: 300px;
+  flex: 1;
+}
+table {
+  padding-top: 10px;
+  width: 90%;
+  
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #149fc9;
+  color: white;
+}
+
+/* Estilo para filas impares */
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+/* Estilo para observar */
+
+.consultar span {
+  color: rgb(45, 97, 209); /* Cambia 'red' al color que desees */
+}
+h4{
+  padding-left: 300px;
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: gray;
+  font-weight: normal;
+  font-size: 2.2rem;
+  font-family: Arial;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+/* Estilo para header */
+
+.mi-header {
+  background-color: #149fc9;
+  padding-right: 15px;
+  padding: 11px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.mi-header .logo3 img {
+  max-width: 25px; /* Ajusta el ancho máximo según tus necesidades */
+  height: auto;
+}
+
+.mi-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.mi-header nav ul li {
+  margin-right: 20px;
+}
+
+.mi-header nav ul li:last-child {
+  margin-right: 0;
+}
+
+.mi-header nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Media Query para hacer el menú responsive */
+@media (max-width: 768px) {
+  .mi-header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .mi-header nav {
+      margin-top: 10px;
+  }
+
+  .mi-header nav ul {
+      flex-direction: column;
+  }
+
+  .mi-header nav ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}

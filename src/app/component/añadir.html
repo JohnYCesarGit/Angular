@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../app.component.css"/>
+    <script src="https://kit.fontawesome.com/c486202c01.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="menu-container">
+          <nav>
+              <ul>
+                  <li>
+                      <a href="#">
+                          <img src="../img/logo.jpg" alt="" width="100px" height="100px" class="imagen-redonda">
+                          <span class="nav-item">SisSalud</span>
+                          <br><br>
+                      </a>
+                  </li>
+                  <li><a href="../views/inicio.html">
+                      <i class="fas fa-home"></i>
+                      <span class="nav-item">Inicio</span>
+                  </a></li><br><br>
+                  <li><a href="../views/inventario.html">
+                      <i class="fa-solid fa-warehouse"></i>
+                      <span class="nav-item">Inventario</span>
+                  </a></li><br><br>
+                  <li><a href="../views/añadir.html">
+                      <i class="fa-solid fa-plus"></i>
+                      <span class="nav-item">Añadir</span>
+                  </a></li><br><br>
+                  <li><a href="../views/editar.html">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                      <span class="nav-item">Editar</span>
+                  </a></li><br><br>
+                  <li><a href="../views/eliminar.html">
+                      <i class="fa-solid fa-trash"></i>
+                      <span class="nav-item">Eliminar</span>
+                  </a></li><br><br>
+                  <li><a href="../views/login.html">
+                      <i class="fas fa-sign-out-alt"></i>
+                      <span class="nav-item">Cerrar Sesión</span>
+                  </a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+    <div class="title-form">
+        <div class="title-ban">
+            <h1>Agregar Producto</h1>
+        </div>
+    </div>
+    <div class="add-form">
+      <div class="form-container">
+        <form action="">
+          <div class="input-box">
+            <label for="title-box">Codigo:</label>
+            <input type="text" placeholder="Codigo" required />
+          </div>
+          <div class="input-box">
+            <label for="title-box">Nombre de Producto:</label>
+            <input type="text" placeholder="Nombre Producto" required />
+          </div>
+          <div class="input-box">
+            <label for="title-box">Descripcion:</label>
+            <input type="text" id="Desc" placeholder="Descripcion" required />
+          </div>
+          <div class="input-box">
+            <label for="title-box">Precio:</label>
+            <input type="number" id="amount"/>
+          </div>
+          <div class="input-box">
+            <label for="title-box">Cantidad:</label>
+            <input type="number" id="amount" min="0" max="100" step="1" />
+          </div>
+          <div class="button-box">
+            <input type="submit" value="Enviar" />
+            <i class="fa-solid fa-trash-can"></i>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
